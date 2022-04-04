@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #042326;
+    font-family: 'Raleway', sans-serif;
+    color: #fff;
+    
+}
+
+.images {
+    background-image: url(georgia.jpg);
+    height: 400px;
+    background-position: center;
+    background-size:cover;
+    opacity: 0.7;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+
+}
+
+h1 {
+    margin-top: 30px;
+    position: absolute;
+    font-size: 45px;
+    color: #fff; 
+    letter-spacing: 0.3rem;
+    line-height: 2em;
+    font-weight: 800;
+    z-index: 1000;
+    opacity: 1;
+    text-transform: uppercase;
+
+}
+
+.paragraph {
+    position: absolute;
+    color: #fff;
+    margin-top: 80px;
+    text-align: left;
+    font-size: 16px;
+    color: #fff; 
+    letter-spacing: 0.1rem;
+    line-height: 27px;
+    font-weight: 500;
+    z-index: 1000;
+    opacity: 1;
+    margin: 150px 50px 0 50px;
+}
+
+.Input {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+#inputField {
+    width: 70%;
+    padding: 12px;
+    position: absolute;
+    margin-top: 310px;
+    z-index: 1000;
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.dishContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 20px;
+    align-items: center;
+    width: 370px;
+}
+
+#containerIngredients {
+    display: flex;
+    justify-content: center;
+}
+
+.dish img {
+    width: 340px;
+    height: 340px;
+    background-position: center;
+    background-size: cover;
+}
+
+.dish {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.recepiesOne, .recepiesTwo, .recepiesThree, .recepiesFour, .recepiesFive, .recepiesSix, .recepiesSeven, .recepiesEight, .recepiesNine {
+    display: none;
+    background-color: #fff;
+    color: black;
+    margin-top: 20px;
+    font-size: 15px;
+    overflow-wrap: break-word;
+    padding: 6px 6px;
+    background-color: #ffffff;
+    line-height: 17px;
+    font-weight: 600;
+    border-width: 5px;
+    border-style: solid;
+    width: 370px;
+    border-image: 
+      linear-gradient(
+        to bottom, 
+        #55ffd4, 
+        #178f71
+      ) 3 100%;
+}
+
+.show {
+    display: block;
+}
+
+.noStyle {
+    list-style: none;
+}
+
+h3 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    letter-spacing: 0.1rem;
+    padding: 5px 0;
+}
+
+#btn, #btnTwo, #btnThree, #btnFour, #btnFive, #btnSix, #btnSeven, #btnEight, #btnNine {
+    margin-top: 10px;
+    padding: 5px 30px;
+    color: black;
+    background-color: #1fbd95;
+    border: none;
+    cursor: pointer;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    line-height: 20px;
+}
+
+.ingredients {
+    padding: 10px 0;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    letter-spacing: 0.1rem;
+}
+
+li {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    letter-spacing: 0.1rem;
+    line-height: 1.3rem;
+
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 20px;
+    
+}
+
+@media all and (max-width:1000px) {
+    h1 {
+        font-size: 43px;
+    }
+
+    .dishContainer {
+        margin: 27px;
+    }
+
+    li {
+        font-size: 13px;
+    }
+
+    .dish img {
+        width: 330px;
+        height: 330px;
+        }
+    
+        .recepies, .recepiesTwo, .recepiesThree, .recepiesFour, .recepiesFive, .recepiesSix, .recepiesSeven, .recepiesEight, .recepiesNine {
+        font-size: 14px;
+        font-weight: 400;
+        }
+
+}
+
+@media all and (max-width:800px) {
+    h1 {
+        font-size: 35px;
+    }
+
+    .dishContainer {
+        margin: 22px;
+    }
+
+    li {
+        font-size: 12px;
+    }
+
+    .dish img {
+    width: 310px;
+    height: 310px;
+    }
+
+    .recepies, .recepiesTwo, .recepiesThree, .recepiesFour, .recepiesFive, .recepiesSix, .recepiesSeven, .recepiesEight, .recepiesNine {
+        font-size: 13px;
+        font-weight: 500;
+    }
+}
+
+@media all and (max-width:500px) {
+    h1 {
+        font-size: 25px;
+        letter-spacing: 0.1rem;
+        line-height: 1.8em;
+        text-align: center;
+        margin-top: 80px;
+    }
+
+    .dish img {
+        width: 280px;
+        height: 280px;
+        }
+
+        .recepies, .recepiesTwo, .recepiesThree, .recepiesFour, .recepiesFive, .recepiesSix, .recepiesSeven, .recepiesEight, .recepiesNine {
+            font-size: 13px;
+            font-weight: 600;
+        }
+
+        .dishContainer {
+            margin: 30px;
+        }
+}
+
+
+
+
+
